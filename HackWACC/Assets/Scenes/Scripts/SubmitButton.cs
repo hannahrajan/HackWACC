@@ -17,7 +17,7 @@ public class SubmitButton : MonoBehaviour
         
     }
 
-    void SubmitButtonManager() {
-        SceneManager.LoadScene(newGameLevel);
+    public void SubmitButtonManager() {
+        SceneManager.LoadScene("LevelScene");
     }
 }

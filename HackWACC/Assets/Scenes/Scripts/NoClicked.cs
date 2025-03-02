@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NoClicked : MonoBehaviour
@@ -24,6 +25,11 @@ public class NoClicked : MonoBehaviour
         cb.highlightedColor = wantedColor;
         cb.pressedColor = wantedColor;
         button.colors = cb;
+    }
+
+    public void about()
+    {
+        SceneManager.LoadScene("About");
     }
 
     // public void changeBackButtonColor() {
